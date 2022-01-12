@@ -67,7 +67,7 @@ label.place(x=60,y=50)
 
 button=tk.Button(main,text="Resim Yükle",bg="#432D51",fg="white",font=("times new roman",16), command=open_img,width=10,height=2)
 button.place(x=145,y=100)
-img = Image.open("img/logo.png")
+img = Image.open("Interface_img/logo.png")
 img = img.resize((250, 250), Image.ANTIALIAS)
 img = ImageTk.PhotoImage(img)
 panel = Label(main, image=img)
@@ -78,7 +78,7 @@ result=tk.Label(main,text="",bg="#432D57",fg="white",font=("times new roman",15,
 result.place(x=130,y=480)
 
 
-logo_img = Image.open("img/logo3.png")
+logo_img = Image.open("Interface_img/logo3.png")
 logo_img = logo_img.resize((100, 100))
 logo_img = ImageTk.PhotoImage(logo_img)
 logo = Label(main, image=logo_img,bd=0)
